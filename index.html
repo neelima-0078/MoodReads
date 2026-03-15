@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodReads — Find Your Next Book by Mood</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">
+        <span class="nav-logo-mark">M</span>
+        <span class="nav-logo-text">MoodReads</span>
+      </a>
+      <div class="nav-right">
+        <a class="nav-link" href="https://www.gutenberg.org" target="_blank" rel="noopener">Gutenberg ↗</a>
+        <a class="nav-cta" href="#moodSection">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="heroSection">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-orb orb-2" aria-hidden="true"></div>
+      <div class="hero-orb orb-3" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Free &nbsp;·&nbsp; No sign-up &nbsp;·&nbsp; 30+ curated books
+        </div>
+
+        <h1 class="hero-headline">
+          Your next great read<br/>
+          starts with a <span class="headline-em">feeling.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Pick your mood and get instant, hand-curated matches from the world's largest free library — all readable in your browser, right now.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">7</span>
+            <span class="stat-label">Moods</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Books</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Free</span>
+          </div>
+        </div>
+
+        <a class="hero-cta" href="#moodSection">
+          Discover your book
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <!-- Floating book spines -->
+        <div class="hero-spines" aria-hidden="true">
+          <div class="spine s1">Pride &amp; Prejudice</div>
+          <div class="spine s2">Dracula</div>
+          <div class="spine s3">Frankenstein</div>
+          <div class="spine s4">Sherlock Holmes</div>
+          <div class="spine s5">Little Women</div>
+          <div class="spine s6">Walden</div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-label">scroll</span>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-section">
+      <div class="section-inner">
+        <p class="eyebrow">How it works</p>
+        <div class="steps-row">
+          <div class="step">
+            <span class="step-num">01</span>
+            <h3 class="step-title">Pick your mood</h3>
+            <p class="step-body">Choose from seven moods or type exactly how you're feeling — we'll understand.</p>
+          </div>
+          <div class="step-arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <h3 class="step-title">Get matched</h3>
+            <p class="step-body">Surface hand-picked titles that fit your current headspace — no algorithm, just taste.</p>
+          </div>
+          <div class="step-arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <h3 class="step-title">Start reading</h3>
+            <p class="step-body">Open any book instantly — free, legal, no account needed, forever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOOD PICKER -->
+    <section class="mood-section" id="moodSection">
+      <div class="section-inner">
+        <p class="eyebrow">Step 01</p>
+        <h2 class="section-heading">How are you feeling today?</h2>
+        <p class="section-sub">Select a mood or describe it in your own words below.</p>
+
+        <div class="mood-grid" id="moodGrid">
+          <button class="mood-btn" data-mood="cozy">
+            <span class="mood-emoji">☕</span><span class="mood-label">Cozy</span>
+          </button>
+          <button class="mood-btn" data-mood="sad">
+            <span class="mood-emoji">🌧️</span><span class="mood-label">Sad</span>
+          </button>
+          <button class="mood-btn" data-mood="romantic">
+            <span class="mood-emoji">🌹</span><span class="mood-label">Romantic</span>
+          </button>
+          <button class="mood-btn" data-mood="motivated">
+            <span class="mood-emoji">⚡</span><span class="mood-label">Motivated</span>
+          </button>
+          <button class="mood-btn" data-mood="curious">
+            <span class="mood-emoji">🔭</span><span class="mood-label">Curious</span>
+          </button>
+          <button class="mood-btn" data-mood="escapist">
+            <span class="mood-emoji">🚀</span><span class="mood-label">Escapist</span>
+          </button>
+          <button class="mood-btn" data-mood="thoughtful">
+            <span class="mood-emoji">🍵</span><span class="mood-label">Thoughtful</span>
+          </button>
+        </div>
+
+        <div class="divider-row">
+          <span class="divider-line"></span>
+          <span class="divider-text">or describe your mood</span>
+          <span class="divider-line"></span>
+        </div>
+
+        <div class="text-mood-wrap">
+          <div class="input-row">
+            <div class="input-shell">
+              <svg class="input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <input type="text" id="moodInput" class="mood-input" placeholder="e.g. I feel nostalgic and a bit melancholy…" maxlength="120"/>
+            </div>
+            <button class="mood-search-btn" id="moodSearchBtn">
+              Find Books
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="results-section" id="resultsSection" aria-live="polite">
+      <div class="section-inner">
+        <div class="results-topbar">
+          <button class="back-btn" id="backBtn">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Change mood
+          </button>
+          <h2 class="results-title" id="resultsTitle">Books for your mood</h2>
+        </div>
+        <div class="books-grid" id="booksGrid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo-mark sm">M</span>
+        <span class="footer-name">MoodReads</span>
+      </div>
+      <p class="footer-note">Books via <a href="https://www.gutenberg.org" target="_blank" rel="noopener">Project Gutenberg</a> &nbsp;·&nbsp; Free &amp; legal &nbsp;·&nbsp; No tracking &nbsp;·&nbsp; No ads</p>
+      <p class="footer-copy">© 2025 MoodReads</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
